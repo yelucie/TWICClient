@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	xmlns:web="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+	version="5.0">
+	<servlet>
+		<servlet-name>DistanceVilles</servlet-name>
+		<servlet-class>com.servlets.DistanceVilles</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DistanceVilles</servlet-name>
+		<url-pattern>/</url-pattern>
+		<url-pattern>/DistanceVilles</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListeVilles</servlet-name>
+		<servlet-class>com.servlets.ListeVilles</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListeVilles</servlet-name>
+		<url-pattern>/ListeVilles</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>FormVille</servlet-name>
+		<servlet-class>com.servlets.FormVille</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FormVille</servlet-name>
+		<url-pattern>/FormVille</url-pattern>
+	</servlet-mapping>
+	
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+		</jsp-property-group>
+	</jsp-config>
+</web-app>
