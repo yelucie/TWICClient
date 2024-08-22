@@ -11,7 +11,7 @@ Building a UI.
 - Improve the UI.
 
 ### Stack
-- J2EE
+- J2EE (Java)
 - Maven
 - JSTL
 - JSON
